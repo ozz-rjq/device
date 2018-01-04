@@ -19,48 +19,48 @@
 				<div class="page-header__row">
 					<form class="page-header__search" action="#">
 						<label for="global-search">Поиск:</label>
-						<input type="text" name="global-search" placeholder="Поиск по сайту" id="global-search">
-						<button class="search-button" type="submit"></button>
+						<input type="text" name="global-search" placeholder="Поиск по сайту" id="global-search" required>
+						<button class="page-header__button" type="submit">Найти</button>
 					</form>
 
-					<div class="user-block">
-						<div class="user-block__login">
+					<ul class="user-block">
+						<li class="user-block__item  user-block__login">
 							<a  class="user-block__link" href="#">Войти</a>
-						</div>
+						</li>
 
-						<div class="user-block__compare">
+						<li class="user-block__item  user-block__compare">
 							<a class="user-block__link" href="#">Сравнить</a>
-						</div>
+						</li>
 
-						<div class="user-block__cart">
+						<li class="user-block__item  user-block__cart">
 							<a class="user-block__link" href="#">Корзина</a>
-						</div>
-					</div>
+						</li>
+					</ul>
 				</div>
 
 				<div class="page-header__row">
 					<nav class="main-nav">
 						<ul class="main-nav__list">
-							<li class="main-nav__item">
+							<li class="main-nav__item  main-nav__catalog">
 								<a class="main-nav__link" href="catalog.html">Каталог товаров</a>
 								<nav class="sub-nav">
 									<ul class="sub-nav__list">
 										<li class="sub-nav__row">
-											<a class="sub-nav__link" href="#">Виртуальная реальность</a>
-											<a class="sub-nav__link" href="#">Фитнесс-браслеты</a>
-											<a class="sub-nav__link" href="#">Квадрокоптеры</a>
+											<span><a class="sub-nav__link" href="#">Виртуальная реальность</a></span>
+											<span><a class="sub-nav__link" href="#">Фитнесс-браслеты</a></span>
+											<span><a class="sub-nav__link" href="#">Квадрокоптеры</a></span>
 										</li>
 										<li class="sub-nav__row">
-											<a class="sub-nav__link" href="catalog.html">Моноподы для селфи</a>
-											<a class="sub-nav__link" href="#">Умные часы</a>
+											<span><a class="sub-nav__link" href="catalog.html">Моноподы для селфи</a></span>
+											<span><a class="sub-nav__link" href="#">Умные часы</a></span>
 										</li>
 										<li class="sub-nav__row">
-											<a class="sub-nav__link" href="#">Экшн-камеры</a>
+											<span><a class="sub-nav__link" href="#">Экшн-камеры</a></span>
 										</li>
 									</ul>
 								</nav>
 							</li>
-							<li class="main-nav__item"><a class="main-nav__link" href="#">Доставка</a></li>
+							<li class="main-nav__item  main-nav__delivery"><a class="main-nav__link" href="#">Доставка</a></li>
 							<li class="main-nav__item"><a class="main-nav__link" href="#">Гарантия</a></li>
 							<li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
 						</ul>

@@ -1,3 +1,24 @@
+.clearfix(){
+	&:after{
+		content: "";
+
+		display: table;
+		clear: both;
+	}
+}
+
+.list-reset(){
+	list-style: none;
+	
+	margin: 0;
+	padding: 0;
+}
+
+.inline-block(){
+	display: inline-block;
+	vertical-align: top;
+}
+
 .pseudo-absolute(@top: 0px, @left: 0px){
 	content: "";
 	position: absolute;
