@@ -22,3 +22,10 @@
   font-weight: 300;
   font-style: normal;
 }
+.container {
+  box-sizing: border-box;
+  width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
