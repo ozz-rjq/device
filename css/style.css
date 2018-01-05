@@ -797,3 +797,36 @@ a {
 .tab-3:checked ~ .offers__items .credit {
   display: block;
 }
+.partners {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 95px;
+  margin-bottom: 50px;
+}
+.partners__col {
+  width: 260px;
+}
+.partners__col a {
+  opacity: 0.2;
+  transition: opacity 0.4s;
+}
+.partners__col a:hover {
+  opacity: 1;
+}
+.partners__col a:hover img {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  /* IE 6-9 */
+}
+.partners__col img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  /* IE 6-9 */
+}
