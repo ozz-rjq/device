@@ -2,6 +2,7 @@
 	position: absolute;
 	top: 25px;
 	left: -60px;
+	z-index: 2;
 
 	box-sizing: border-box;
 	min-height: 165px;
@@ -12,6 +13,15 @@
 		@header-bg 0%, @header-bg 23%,@sub-nav-bg 23%);
 
 	display: none;
+
+	animation: sub-nav-appear 0.4s;
+}
+
+@keyframes sub-nav-appear{
+	0%{
+		opacity: 0;
+	}
+	
 }
 
 .sub-nav__list{
