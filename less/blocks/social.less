@@ -1,0 +1,48 @@
+.social{
+	.list-reset;
+
+	margin: 0 auto;
+}
+
+.social__item{
+	.inline-block;
+
+	margin-right: 12px;
+}
+
+.social__link{
+	.inline-block;
+
+	position: relative;
+
+	font-size: 0;
+
+	width: 40px;
+	height: 38px;
+
+	border-radius: 50%;
+
+	background-image: url("../img/spritesheet.png");
+	background-repeat: no-repeat;
+	opacity: 0.3;
+	
+	&--fb{
+		background-position: 0 -318px;
+	}
+
+	&--insta{
+		background-position: 0 -376px;
+	}
+
+	&--tw{
+		background-position: 0 -433px;
+	}
+
+	&:hover{
+		opacity: 1;
+	}
+
+	&:active{
+		opacity: 0.1;
+	}
+}

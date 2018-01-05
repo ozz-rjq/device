@@ -65,6 +65,10 @@
 	width: 210px;
 }
 
+.main-nav__contacts{
+	margin-left: auto;
+}
+
 .main-nav__link{
 	font-family: 'Gilroy', 'Arial', sans-serif;
 	font-size: 18px;
@@ -82,12 +86,40 @@
 	}
 }
 
-
-
 .main-nav__catalog:hover  .sub-nav{
 	display: block;
 }
 
 .main-nav__catalog:hover  .main-nav__link{
 	color: rgba(0,0,0,0.6);
+}
+
+//FOOTER
+
+.main-nav--footer .main-nav__link{
+	color: #fff;
+
+	&:hover{
+		color: rgba(255,255,255,0.6);
+	}
+
+	&:active{
+		color: rgba(255,255,255,0.3);
+	}
+}
+
+.main-nav__item{
+
+	&--delivery{
+		margin-left: 60px;
+		margin-right: 32px;
+	}
+
+	&--warranty{
+		margin-right: 14px;
+	}
+
+	&--contacts{
+		margin-left: 25px;
+	}
 }

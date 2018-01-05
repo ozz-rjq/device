@@ -139,7 +139,7 @@
 		animation: all-of-a-sudden 0.7s;
 	}
 
-	&.warranty::after{
+	&--warranty::after{
 		width: 171px;
 		height: 195px;
 
@@ -150,7 +150,7 @@
 	}
 
 
-	&.credit::after{
+	&--credit::after{
 		width: 158px;
 		height: 188px;
 
@@ -255,14 +255,14 @@
 	color: #ffe27f;
 }
 
-.tab-1:checked ~ .offers__items .delivery{
+.tab-1:checked ~ .offers__items .offers__item--delivery{
 	display: block;
 }
 
-.tab-2:checked ~ .offers__items .warranty{
+.tab-2:checked ~ .offers__items .offers__item--warranty{
 	display: block;
 }
 
-.tab-3:checked ~ .offers__items .credit{
+.tab-3:checked ~ .offers__items .offers__item--credit{
 	display: block;
 }
