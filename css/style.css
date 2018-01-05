@@ -561,3 +561,38 @@ a {
 .button:active .button__inner {
   color: rgba(0, 0, 0, 0.3);
 }
+.popular-items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 84px;
+}
+.popular-item__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  background-color: #ffe27f;
+}
+.popular-item__img .to-bottom {
+  margin-top: auto;
+}
+.popular-item__title {
+  margin-top: 32px;
+  margin-bottom: 0;
+  width: 140px;
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+.popular-item__img:hover {
+  background-color: #ffc600;
+}
+.popular-item__link:active .popular-item__title {
+  color: rgba(0, 0, 0, 0.3);
+}
+.popular-item__link:active .popular-item__img {
+  opacity: 0.3;
+}
