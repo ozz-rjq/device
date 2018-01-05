@@ -94,9 +94,9 @@
 								Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
 							</p>
 
-							<button class="button  button--middle" type="button">
+							<a class="button  button--middle">
 								<span class="button__inner">Подробнее</span>
-							</button>
+							</a>
 
 							<div class="slider__info  slider-info">
 								<div class="slider-info__col">
@@ -129,9 +129,9 @@
 								Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
 							</p>
 
-							<button class="button  button--middle" type="button">
+							<a class="button  button--middle">
 								<span class="button__inner">Подробнее</span>
-							</button>
+							</a>
 
 							<div class="slider__info  slider-info">
 								<div class="slider-info__col">
@@ -154,9 +154,9 @@
 								Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру.
 							</p>
 
-							<button class="button  button--middle" type="button">
+							<a class="button  button--middle">
 								<span class="button__inner">Подробнее</span>
-							</button>
+							</a>
 
 							<div class="slider__info  slider-info">
 								<div class="slider-info__col">
@@ -237,26 +237,46 @@
 		</section>
 
 		<section class="offers">
-			<div class="offers__tabs">
-				<button class="offers-tab  offers-tab--active" type="button">
-					<span class="offers-tab__inner">Доставка</span>
-				</button>
+			<div class="container">
+				<input class="offers__controls  tab-1" type="radio" name="tab" id="tab-1" hidden checked>
+				<input class="offers__controls  tab-2" type="radio" name="tab" id="tab-2" hidden>
+				<input class="offers__controls  tab-3" type="radio" name="tab" id="tab-3" hidden>
 
-				<button class="offers-tab" type="button">
-					<span class="offers-tab__inner">Гарантия</span>
-				</button>
+				<div class="offers__tabs">
+					<label class="offers-tab" for="tab-1">
+						<span class="offers-tab__inner">Доставка</span>
+					</label>
+					
+					<label class="offers-tab" for="tab-2">
+						<span class="offers-tab__inner">Гарантия</span>
+					</label>
 
-				<button class="offers-tab" type="button">
-					<span class="offers-tab__inner">Кредит</span>
-				</button>
-			</div>
+					<label class="offers-tab" for="tab-3">
+						<span class="offers-tab__inner">Кредит</span>
+					</label>
+				</div>
 
-			<div class="offers__items">
-				<div class="offers__item">
-					<h3 class="offers__title">Доставка</h3>
-					<p class="offers__desc">
-						Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-					</p>
+				<div class="offers__items">
+					<div class="offers__item  delivery">
+						<h3 class="offers__title">Доставка</h3>
+						<p class="offers__desc">
+							Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+						</p>
+					</div>
+
+					<div class="offers__item  warranty">
+						<h3 class="offers__title">Гарантия</h3>
+						<p class="offers__desc">
+							Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.
+						</p>
+					</div>
+
+					<div class="offers__item  credit">
+						<h3 class="offers__title">Кредит</h3>
+						<p class="offers__desc">
+							Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+						</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -293,9 +313,9 @@
 						<li class="info-block__item">Автотрейдинг</li>
 						<li class="info-block__item">ЖелДорЭкспедиция</li>
 					</ul>
-					<button class="button  button--long" type="button">
+					<a class="button  button--long">
 						<span class="button__inner">Подробнее о нас</span>
-					</button>
+					</a>
 				</section>
 
 				<section class="info-block">
@@ -307,9 +327,9 @@
 						<img src="img./map.jpg" alt="Moscow Map" width="560" height="222">
 					</div>
 
-					<button class="button  button--long" type="button">
+					<a class="button  button--long">
 						<span class="button__inner">Напишите нам</span>
-					</button>
+					</a>
 				</section>
 		</div>
 	</main>

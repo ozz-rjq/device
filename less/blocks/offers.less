@@ -1,0 +1,225 @@
+.offers{
+	background: linear-gradient(transparent 0%, transparent 25.6%, #e6e6e6 25.6%);
+}
+
+.offers .container{
+	display: flex;
+}
+
+.offers__tabs{
+	width: 284px;
+	padding-top: 80px;
+
+	position: relative;
+
+	&::after{
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0px;
+
+		width: 7px;
+		height: 319px;
+		background-color: #000;
+	}
+}
+
+.offers-tab{
+	position: relative;
+
+	display: block;
+	vertical-align: top;
+
+	box-sizing: border-box;
+	padding: 0;
+	width: 277px;
+	height: 40px;
+	margin-bottom: 25px;
+
+	font-family: 'Gilroy';
+	font-size: 18px;
+	line-height: 40px;
+	font-weight: 800;
+	letter-spacing: 0.2em;
+	text-align: left;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	border: none;
+
+	background-color: transparent;
+
+	&:hover{
+		cursor: pointer;
+	}
+}
+
+.offers-tab::after{
+	content: "";
+	position: absolute;
+	top: 16px;
+	left: 0;
+	z-index: 1;
+
+	width: 160px;
+	height: 8px;
+
+	background-color: @button-bg;
+
+	transition: height 0.4s, top 0.4s, background-color 0.25s;
+}
+
+.offers-tab__inner{
+	display: block;
+
+	position: relative;
+	z-index: 2;
+
+	display: inline-block;
+	vertical-align: top;
+
+	text-align: center;
+
+	box-sizing: border-box;
+	width: 160px;
+	height: 100%;
+
+	background-color: transparent;
+}
+
+.offers-tab:hover::after{
+	top: 0;
+	width: 100%;
+	height: 100%;
+
+	background-color: #000;
+}
+
+.offers-tab:hover .offers-tab__inner{
+	color: #ffe27f;
+}
+
+.offers-tab:active::after{
+	background-color: @button-bg;
+}
+
+.offers-tab:active .button__inner{
+	color: rgba(0,0,0,0.3);
+}
+
+//Offers Items
+
+.offers__items{
+	padding-top: 68px;
+	padding-left: 116px;
+	padding-bottom: 130px;
+}
+
+.offers__item{
+	position: relative;
+
+	display: none;
+
+	&::after{
+		content: "";
+		position: absolute;
+		top: 17px;
+		right: -244px;
+
+		width: 136px;
+		height: 164px;
+
+		background-image: url("../img/delivery.png");
+		background-repeat: no-repeat;
+	}
+
+	&.warranty::after{
+		width: 171px;
+		height: 195px;
+
+		top: -10px;
+		right: -224px;
+
+		background-image: url("../img/warranty.png");
+	}
+
+
+	&.credit::after{
+		width: 158px;
+		height: 188px;
+
+		top: -10px;
+		right: -234px;
+
+		background-image: url("../img/credit.png");
+	}
+}
+
+.offers__title{
+	margin: 0;
+	margin-bottom: 26px;
+	width: 400px;
+
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-size: 47px;
+	line-height: 58px;
+	font-weight: 800;
+	letter-spacing: 0.02em;
+}
+
+.offers__desc{
+	width: 450px;
+}
+
+//LOGIC
+
+.tab-1:checked ~ 
+		.offers__tabs label[for="tab-1"]::after{
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+}
+
+.tab-1:checked ~ 
+		.offers__tabs label[for="tab-1"] span{
+	color: #ffe27f;
+}
+
+.tab-2:checked ~ 
+		.offers__tabs label[for="tab-2"]::after{
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+}
+
+.tab-2:checked ~ 
+		.offers__tabs label[for="tab-2"] span{
+	color: #ffe27f;
+}
+
+.tab-3:checked ~ 
+		.offers__tabs label[for="tab-3"]::after{
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+}
+
+.tab-3:checked ~ 
+		.offers__tabs label[for="tab-3"] span{
+	color: #ffe27f;
+}
+
+.tab-1:checked ~ .offers__items .delivery{
+	display: block;
+}
+
+.tab-2:checked ~ .offers__items .warranty{
+	display: block;
+}
+
+.tab-3:checked ~ .offers__items .credit{
+	display: block;
+}
