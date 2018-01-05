@@ -626,7 +626,7 @@ a {
   vertical-align: top;
   box-sizing: border-box;
   padding: 0;
-  width: 277px;
+  width: 160px;
   height: 40px;
   margin-bottom: 25px;
   font-family: 'Gilroy';
@@ -642,6 +642,9 @@ a {
 }
 .offers-tab:hover {
   cursor: pointer;
+}
+.offers-tab:active {
+  width: 277px;
 }
 .offers-tab::after {
   content: "";
@@ -668,12 +671,11 @@ a {
 }
 .offers-tab:hover::after {
   top: 0;
-  width: 100%;
+  width: 160px;
   height: 100%;
-  background-color: #000;
 }
 .offers-tab:hover .offers-tab__inner {
-  color: #ffe27f;
+  color: #000;
 }
 .offers-tab:active::after {
   background-color: #ffc600;
@@ -699,6 +701,7 @@ a {
   height: 164px;
   background-image: url("../img/delivery.png");
   background-repeat: no-repeat;
+  animation: all-of-a-sudden 0.7s;
 }
 .offers__item.warranty::after {
   width: 171px;
@@ -714,6 +717,14 @@ a {
   right: -234px;
   background-image: url("../img/credit.png");
 }
+@keyframes all-of-a-sudden {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
 .offers__title {
   margin: 0;
   margin-bottom: 26px;
@@ -723,9 +734,26 @@ a {
   line-height: 58px;
   font-weight: 800;
   letter-spacing: 0.02em;
+  animation: offers-title 0.4s;
+}
+@keyframes offers-title {
+  0% {
+    color: #fff;
+  }
 }
 .offers__desc {
   width: 450px;
+  letter-spacing: 0.01em;
+  animation: offers-desc 0.25s;
+}
+@keyframes offers-desc {
+  0% {
+    transform: translateY(-25px);
+    opacity: 0.25;
+  }
+}
+.tab-1:checked ~ .offers__tabs label[for="tab-1"] {
+  width: 277px;
 }
 .tab-1:checked ~ .offers__tabs label[for="tab-1"]::after {
   top: 0;
@@ -736,6 +764,9 @@ a {
 .tab-1:checked ~ .offers__tabs label[for="tab-1"] span {
   color: #ffe27f;
 }
+.tab-2:checked ~ .offers__tabs label[for="tab-2"] {
+  width: 277px;
+}
 .tab-2:checked ~ .offers__tabs label[for="tab-2"]::after {
   top: 0;
   height: 100%;
@@ -744,6 +775,9 @@ a {
 }
 .tab-2:checked ~ .offers__tabs label[for="tab-2"] span {
   color: #ffe27f;
+}
+.tab-3:checked ~ .offers__tabs label[for="tab-3"] {
+  width: 277px;
 }
 .tab-3:checked ~ .offers__tabs label[for="tab-3"]::after {
   top: 0;
