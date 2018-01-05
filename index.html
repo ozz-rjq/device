@@ -67,19 +67,24 @@
 					</nav>
 				</div>
 			</div>
-
 	</header>
 
 	<main>
 		<section class="slider  container">
-				<input class="slide-toggles  slide-1" type="radio" name="slider-toggles" id="slide-1" checked>
-				<input class="slide-toggles  slide-2" type="radio" name="slider-toggles" id="slide-2">
-				<input class="slide-toggles  slide-3" type="radio" name="slider-toggles" id="slide-3">
+				<input class="slide-toggles  slide-1" type="radio" name="slider-toggles" id="slide-1" checked hidden>
+				<input class="slide-toggles  slide-2" type="radio" name="slider-toggles" id="slide-2" hidden>
+				<input class="slide-toggles  slide-3" type="radio" name="slider-toggles" id="slide-3" hidden>
+
+				<div class="slider__controls">
+					<label class="slider__label" for="slide-1">Первый слайд</label>
+					<label class="slider__label" for="slide-2">Второй слайд</label>
+					<label class="slider__label" for="slide-3">Третий слайд</label>
+				</div>
 
 				<div class="slider__slides">
 					<div class="slider__slide">
 						<div class="slider__col">
-							<img class="slider__img" src="img/slider-1.png" alt="Slide 1" width="384" height="486">
+							<img class="slider__img  img-1" src="img/slider-1.png" alt="Slide 1" width="384" height="486">
 						</div>
 
 						<div class="slider__col">
@@ -90,7 +95,7 @@
 							</p>
 
 							<button class="button  button--middle" type="button">
-								<span class="button-inner">Подробнее</span>
+								<span class="button__inner">Подробнее</span>
 							</button>
 
 							<div class="slider__info  slider-info">
@@ -114,7 +119,7 @@
 
 					<div class="slider__slide">
 						<div class="slider__col">
-							<img class="slider__img" src="img/slider-2.png" alt="Slide 2" width="345" height="485">
+							<img class="slider__img  img-2" src="img/slider-2.png" alt="Slide 2" width="345" height="485">
 						</div>
 
 						<div class="slider__col">
@@ -125,7 +130,7 @@
 							</p>
 
 							<button class="button  button--middle" type="button">
-								<span class="button-inner">Подробнее</span>
+								<span class="button__inner">Подробнее</span>
 							</button>
 
 							<div class="slider__info  slider-info">
@@ -139,7 +144,7 @@
 
 					<div class="slider__slide">
 						<div class="slider__col">
-							<img class="slider__img" src="img/slider-3.png" alt="Slide 3" width="526" height="334">
+							<img class="slider__img  img-3" src="img/slider-3.png" alt="Slide 3" width="526" height="334">
 						</div>
 
 						<div class="slider__col">
@@ -150,7 +155,7 @@
 							</p>
 
 							<button class="button  button--middle" type="button">
-								<span class="button-inner">Подробнее</span>
+								<span class="button__inner">Подробнее</span>
 							</button>
 
 							<div class="slider__info  slider-info">
@@ -166,12 +171,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
-
-				<div class="slider__controls">
-					<label class="slider__label" for="slide-1">Первый слайд</label>
-					<label class="slider__label" for="slide-2">Второй слайд</label>
-					<label class="slider__label" for="slide-3">Третий слайд</label>
 				</div>
 		</section>
 
@@ -283,7 +282,7 @@
 						<li class="info-block__item">ЖелДорЭкспедиция</li>
 					</ul>
 					<button class="button  button--long" type="button">
-						<span class="button-inner">Подробнее о нас</span>
+						<span class="button__inner">Подробнее о нас</span>
 					</button>
 				</section>
 
@@ -297,7 +296,7 @@
 					</div>
 
 					<button class="button  button--long" type="button">
-						<span class="button-inner">Напишите нам</span>
+						<span class="button__inner">Напишите нам</span>
 					</button>
 				</section>
 		</div>
