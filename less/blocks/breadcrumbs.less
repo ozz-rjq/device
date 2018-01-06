@@ -1,0 +1,44 @@
+.breadcrumbs{
+	list-style: none;
+	padding: 0;
+
+	margin-bottom: 44px;
+
+	&.container{
+		width: 1040px;
+	}
+}
+
+.breadcrumbs__item{
+	position: relative;
+
+	.inline-block;
+
+	padding-right: 28px;
+
+	&::after{
+		content: "\003E";
+		position: absolute;
+		top: 1px;
+		right: 10px;
+		font-size: 10px;
+		font-weight: 700;
+	}
+
+	&:last-child::after{
+		content: "";
+	}
+}
+
+.breadcrumbs__link{
+	color: rgba(0,0,0,0.3);
+	letter-spacing: 0.01em;
+
+	&:hover{
+		color: rgba(0,0,0,0.6);
+	}
+
+	&:active{
+		color: rgba(0,0,0,0.1);
+	}
+}
