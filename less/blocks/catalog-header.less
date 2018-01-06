@@ -1,0 +1,169 @@
+.catalog-header{
+	position: relative;
+
+	background-color: #ebebeb;
+
+	.container{
+		display: flex;
+	}
+
+	&::before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 5;
+
+		width: 50%;
+		height: 100%;
+		background-color: #dbdbdb;
+	}
+}
+
+.catalog-header__filter{
+	position: relative;
+	z-index: 10;
+	width: 328px;
+
+	background-color: #dbdbdb;
+}
+
+.catalog-header__title{
+	.inline-block;
+
+	margin-top: 26px;
+	margin-bottom: 24px;
+	margin-left: 60px;
+	margin-right: 55px;
+
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 0.2em;
+
+	&--margin{
+		margin-left: 72px;
+	}
+}
+
+.catalog-header__sort{
+	position: relative;
+	z-index: 10;
+
+	width: 832px;
+	background-color: #ebebeb;
+
+	display: flex;
+}
+
+.catalog-header__sort-list,
+.catalog-header__sort-arrows{
+	.list-reset;
+}
+
+.catalog-header__sort-item,
+.catalog-header__arrow-item{
+	.inline-block;
+
+	margin-top: 24px;
+	margin-right: 26px;
+
+	line-height: 18px;
+}
+
+.catalog-header__sort-link{
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	color: rgba(0,0,0,0.3);
+
+	&:hover{
+		color: rgba(0,0,0,0.6);
+	}
+
+	&:active{
+		color: rgba(0,0,0,1);
+	}
+
+	&--active{
+		cursor: default;
+		color: rgba(0,0,0,1);
+
+		&:hover{
+			color: rgba(0,0,0,1);
+		}
+	}
+}
+
+.catalog-header__sort-arrows{
+	margin-left: auto;
+}
+
+.catalog-header__arrow-item{
+	margin-top: 28px;
+	margin-right: 0;
+
+	&:nth-child(1){
+		margin-right: 22px;
+	}
+}
+
+.catalog-header__arrow-link{
+	.inline-block;
+
+	font-size: 0;
+	line-height: 18px;
+	font-weight: 400;
+	color: rgba(0,0,0,0.3);
+
+	width: 0; 
+  height: 0; 
+}
+
+.catalog-header__arrow-up{
+	border-left: 8.5px solid transparent;
+  border-right: 8.5px solid transparent;
+  
+  border-bottom: 9px solid #bcbcbc;
+
+  &:hover{
+  	border-bottom-color: #999;
+  }
+
+  &:active{
+  	border-bottom-color: #000;
+  }
+
+  &.catalog-header__arrow-link--active{
+  	border-bottom-color: #000;
+
+  	&:hover{
+  		border-bottom-color: #000;
+  	}
+  }
+}
+
+.catalog-header__arrow-down{
+	border-left: 8.5px solid transparent;
+  border-right: 8.5px solid transparent;
+  
+  border-top: 9px solid #bcbcbc;
+
+   &:hover{
+  	border-top-color: #999;
+  }
+
+  &:active{
+  	border-top-color: #000;
+  }
+
+   &.catalog-header__arrow-link--active{
+  	border-top-color: #000;
+
+  	&:hover{
+  		border-top-color: #000;
+  	}
+  }
+}
