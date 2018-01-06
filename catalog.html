@@ -107,7 +107,7 @@
 
 		<div class="catalog">
 			<div class="container">
-				<div class="filter">
+				<div class="catalog__filter  filter">
 					<div class="filter__body">
 						<form class="form" action="#" method="get">
 							<fieldset class="form__fieldset">
@@ -170,9 +170,9 @@
 							<img src="img/catalog-item-1.jpg" alt="Amateur Selfie" width="360" height="380">
 
 							<div class="item__hover">
-								<button class="button" type="button">
-									<span class="button-inner">В корзину</span>
-								</button>
+								<a class="button">
+									<span class="button__inner">В корзину</span>
+								</a>
 								<a class="item__to-compare" href="#">Добавить к сравнению</a>
 							</div>
 						</div>
@@ -188,9 +188,9 @@
 							<img src="img/catalog-item-2.jpg" alt="Professional Selfie" width="360" height="380">
 
 							<div class="item__hover">
-								<button class="button" type="button">
-									<span class="button-inner">В корзину</span>
-								</button>
+								<a class="button">
+									<span class="button__inner">В корзину</span>
+								</a>
 								<a class="item__to-compare" href="#">Добавить к сравнению</a>
 							</div>
 						</div>
@@ -206,9 +206,9 @@
 							<img src="img/catalog-item-3.jpg" alt="Unsinkable" width="360" height="380">
 
 							<div class="item__hover">
-								<button class="button" type="button">
-									<span class="button-inner">В корзину</span>
-								</button>
+								<a class="button">
+									<span class="button__inner">В корзину</span>
+								</a>
 								<a class="item__to-compare" href="#">Добавить к сравнению</a>
 							</div>
 						</div>
@@ -224,9 +224,9 @@
 							<img src="img/catalog-item-4.jpg" alt="Follow me" width="360" height="380">
 
 							<div class="item__hover">
-								<button class="button" type="button">
-									<span class="button-inner">В корзину</span>
-								</button>
+								<a class="button">
+									<span class="button__inner">В корзину</span>
+								</a>
 								<a class="item__to-compare" href="#">Добавить к сравнению</a>
 							</div>
 						</div>
@@ -236,26 +236,27 @@
 							<b class="item__price">4 900 руб.</b>
 						</div>
 					</article>
-				</div>
 
-				<div class="pagination">
-					<ul class="pagination__list">
-						<li class="pagination__item">
-							<a class="pagination__link" href="#">Назад</a>
-						</li>
-						<li class="pagination__item">
-							<a class="pagination__link" href="#">1</a>
-						</li>
-						<li class="pagination__item">
-							<a class="pagination__link" href="#">2</a>
-						</li>
-						<li class="pagination__item">
-							<a class="pagination__link" href="#">3</a>
-						</li>
-						<li class="pagination__item">
-							<a class="pagination__link" href="#">Вперед</a>
-						</li>
-					</ul>
+					<div class="pagination">
+						<ul class="pagination__list">
+							<li class="pagination__item">
+								<a class="pagination__link" href="#">Назад</a>
+							</li>
+							<li class="pagination__item">
+								<a class="pagination__link" href="#">1</a>
+							</li>
+							<li class="pagination__item">
+								<a class="pagination__link" href="#">2</a>
+							</li>
+							<li class="pagination__item">
+								<a class="pagination__link" href="#">3</a>
+							</li>
+							<li class="pagination__item">
+								<a class="pagination__link" href="#">Вперед</a>
+							</li>
+						</ul>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -268,7 +269,7 @@
 
 			<ul class="user-block user-block--footer">
 				<li class="user-block__item  user-block__login">
-					<a href="#" class="user-block__link">Войти</a>
+					<a href="#" class="user-block__link user-block__link--footer">Войти</a>
 				</li>
 
 				<li class="user-block__item  user-block__compare">

@@ -295,6 +295,9 @@ a {
 .user-block--footer .user-block__login:hover {
   background-position: 4px -90px;
 }
+.user-block__link--footer {
+  margin-top: 5px;
+}
 .user-block--footer .user-block__compare {
   width: 92px;
   background-position: 4px -151px;
@@ -1237,4 +1240,36 @@ a {
 }
 .catalog-header__arrow-down.catalog-header__arrow-link--active:hover {
   border-top-color: #000;
+}
+.catalog {
+  position: relative;
+  background-color: #fff;
+}
+.catalog .container {
+  display: flex;
+}
+.catalog::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 50%;
+  height: 100%;
+  background-color: #eee;
+}
+.catalog__filter {
+  position: relative;
+  z-index: 10;
+  width: 328px;
+  background-color: #eee;
+}
+.catalog__items {
+  position: relative;
+  z-index: 10;
+  box-sizing: border-box;
+  width: 832px;
+  padding-top: 69px;
+  padding-left: 72px;
+  background-color: #fff;
 }
