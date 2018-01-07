@@ -16,7 +16,7 @@
 	display: block;
 	width: 100%;
 
-	margin-bottom: 27px;
+	margin-bottom: 11px;
 
 	font-family: 'Gilroy', 'Arial', sans-serif;
 	font-size: 18px;
@@ -25,8 +25,85 @@
 	letter-spacing: 0.01em;
 
 	border-top: 2px solid #000;
+
+	&--high{
+		margin-bottom: 27px;
+	}
 }
 
 .form__price-filter{
 	margin-bottom: 23px;
+}
+
+.form__wrap:last-child{
+	margin-bottom: 30px;
+}
+
+.form__wrap input{
+	display: none;
+}
+
+.form__wrap label{
+	position: relative;
+
+	padding-left: 40px;
+
+	font-size: 14px;
+	line-height: 40px;
+
+	&:hover{
+		cursor: pointer;
+	}
+}
+
+.form__checkbox + label > span{
+	position: absolute;
+	top: -3px;
+	left: 0;
+
+	width: 23px;
+	height: 23px;
+
+	background-color: #dcdcdc;
+}
+
+.form__checkbox + label:hover > span{
+	background-color: #cfcfcf;
+}
+
+.form__checkbox:checked + label > span{
+	background-image: url("../img/spritesheet.png");
+	background-position: 6px -484px;
+	background-repeat: no-repeat;
+}
+
+.form__radio + label > span{
+	position: absolute;
+	top: -3px;
+	left: 0;
+
+	box-sizing: border-box;
+	width: 23px;
+	height: 23px;
+
+	border-radius: 50%;
+	border: 2px solid #c7c7c7;
+}
+
+.form__radio + label:hover > span{
+	border-color: #aeaeae;
+}
+
+.form__radio:checked + label > span{
+
+	&::after{
+		.pseudo-absolute(5px, 5px);
+
+		box-sizing: border-box;
+		width: 9px;
+		height: 9px;
+
+		border: 2px solid #000;
+		border-radius: 50%;
+	}
 }

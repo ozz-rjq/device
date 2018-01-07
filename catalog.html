@@ -111,13 +111,13 @@
 					<div class="form__wrapper">
 						<form class="form__body" action="#" method="get">
 							<fieldset class="form__fieldset">
-								<legend class="form__legend">Стоимость</legend>
+								<legend class="form__legend  form__legend--high">Стоимость</legend>
 
 								<div class="form__price-filter  filter">
 									<div class="filter__bar">
 										<div class="filter__active">
-											<div class="filter__toggle  filter__toggle--min"></div>
-											<div class="filter__toggle  filter__toggle--max"></div>
+											<button class="filter__toggle  filter__toggle--min" type="button"></button>
+											<button class="filter__toggle  filter__toggle--max" type="button"></button>
 										</div>
 									</div>
 
@@ -131,30 +131,44 @@
 							<fieldset class="form__fieldset">
 								<legend class="form__legend">Цвет</legend>
 
-								<input class="form__checkbox" type="checkbox" name="color" value="black" id="black" checked>
-								<label for="black">Черный<span></span></label>
+								<div class="form__wrap">
+									<input class="form__checkbox" type="checkbox" name="color" value="black" id="black" checked>
+									<label for="black">Черный<span></span></label>
+								</div>
 
-								<input class="form__checkbox" type="checkbox" name="color" value="white" id="white">
-								<label for="white">Белый<span></span></label>
+								<div class="form__wrap">
+									<input class="form__checkbox" type="checkbox" name="color" value="white" id="white">
+									<label for="white">Белый<span></span></label>
+								</div>
 
-								<input class="form__checkbox" type="checkbox" name="color" value="blue" id="blue" checked>
-								<label for="blue">Синий<span></span></label>
+								<div class="form__wrap">
+									<input class="form__checkbox" type="checkbox" name="color" value="blue" id="blue" checked>
+									<label for="blue">Синий<span></span></label>
+								</div>
 
-								<input class="form__checkbox" type="checkbox" name="color" value="red" id="red" checked>
-								<label for="red">Красный<span></span></label>
+								<div class="form__wrap">
+									<input class="form__checkbox" type="checkbox" name="color" value="red" id="red" checked>
+									<label for="red">Красный<span></span></label>
+								</div>
 
-								<input class="form__checkbox" type="checkbox" name="color" value="pink" id="pink">
-								<label for="pink">Розовый<span></span></label>
+								<div class="form__wrap">
+									<input class="form__checkbox" type="checkbox" name="color" value="pink" id="pink">
+									<label for="pink">Розовый<span></span></label>
+								</div>
 							</fieldset>
 
 							<fieldset class="form__fieldset">
 								<legend class="form__legend">Bluetooth</legend>
 
-								<input class="form__radio" type="radio" name="bluetooth" value="yes" id="yes" checked>
-								<label for="yes">Есть<span></span></label>
+								<div class="form__wrap">
+									<input class="form__radio" type="radio" name="bluetooth" value="yes" id="yes" checked>
+									<label for="yes">Есть<span></span></label>
+								</div>
 
-								<input class="form__radio" type="radio" name="bluetooth" value="yes" id="no">
-								<label for="no">Нет<span></span></label>
+								<div class="form__wrap">
+									<input class="form__radio" type="radio" name="bluetooth" value="no" id="no">
+									<label for="no">Нет<span></span></label>
+								</div>
 							</fieldset>
 
 							<button class="button" type="submit">
@@ -220,7 +234,7 @@
 							</div>
 						</article>
 
-						<article class="item">
+						<article class="item item--new">
 							<div class="item__img">
 								<a href="#"><img src="img/catalog-item-4.jpg" alt="Follow me" width="360" height="380"></a>
 

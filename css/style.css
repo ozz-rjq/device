@@ -1281,6 +1281,17 @@ a {
 .item {
   position: relative;
 }
+.item--new::after {
+  content: "";
+  position: absolute;
+  top: 27px;
+  right: 27px;
+  z-index: 10;
+  width: 60px;
+  height: 61px;
+  background-image: url("../img/new.png");
+  background-repeat: no-repeat;
+}
 .item__img {
   position: relative;
   height: 380px;
@@ -1432,7 +1443,7 @@ a {
 .form__legend {
   display: block;
   width: 100%;
-  margin-bottom: 27px;
+  margin-bottom: 11px;
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 42px;
@@ -1440,8 +1451,66 @@ a {
   letter-spacing: 0.01em;
   border-top: 2px solid #000;
 }
+.form__legend--high {
+  margin-bottom: 27px;
+}
 .form__price-filter {
   margin-bottom: 23px;
+}
+.form__wrap:last-child {
+  margin-bottom: 30px;
+}
+.form__wrap input {
+  display: none;
+}
+.form__wrap label {
+  position: relative;
+  padding-left: 40px;
+  font-size: 14px;
+  line-height: 40px;
+}
+.form__wrap label:hover {
+  cursor: pointer;
+}
+.form__checkbox + label > span {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  background-color: #dcdcdc;
+}
+.form__checkbox + label:hover > span {
+  background-color: #cfcfcf;
+}
+.form__checkbox:checked + label > span {
+  background-image: url("../img/spritesheet.png");
+  background-position: 6px -484px;
+  background-repeat: no-repeat;
+}
+.form__radio + label > span {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  box-sizing: border-box;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  border: 2px solid #c7c7c7;
+}
+.form__radio + label:hover > span {
+  border-color: #aeaeae;
+}
+.form__radio:checked + label > span::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  box-sizing: border-box;
+  width: 9px;
+  height: 9px;
+  border: 2px solid #000;
+  border-radius: 50%;
 }
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -1478,7 +1547,7 @@ input[type=number] {
   width: 14px;
   height: 14px;
   border: 2px solid #000;
-  border-radius: 14px;
+  border-radius: 50%;
   background-color: #efefef;
 }
 .filter__toggle--min {
@@ -1489,6 +1558,11 @@ input[type=number] {
 }
 .filter__toggle:hover {
   cursor: pointer;
+}
+.filter__toggle:active {
+  background-color: #63b000;
+  border-color: #fff;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.75);
 }
 .filter__values {
   font-family: 'Gilroy', 'Arial', sans-serif;
