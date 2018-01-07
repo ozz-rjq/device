@@ -42,7 +42,7 @@
 				<nav class="main-nav">
 					<ul class="main-nav__list">
 						<li class="main-nav__item  main-nav__catalog">
-							<a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+							<a class="main-nav__link">Каталог товаров</a>
 							<nav class="sub-nav">
 								<ul class="sub-nav__list">
 									<li class="sub-nav__row">
@@ -51,7 +51,7 @@
 										<span><a class="sub-nav__link" href="#">Квадрокоптеры</a></span>
 									</li>
 									<li class="sub-nav__row">
-										<span><a class="sub-nav__link" href="catalog.html">Моноподы для селфи</a></span>
+										<span><a class="sub-nav__link">Моноподы для селфи</a></span>
 										<span><a class="sub-nav__link" href="#">Умные часы</a></span>
 									</li>
 									<li class="sub-nav__row">
@@ -107,23 +107,23 @@
 
 		<div class="catalog">
 			<div class="container">
-				<div class="catalog__filter  filter">
-					<div class="filter__body">
-						<form class="form" action="#" method="get">
+				<div class="catalog__filter  form">
+					<div class="form__wrapper">
+						<form class="form__body" action="#" method="get">
 							<fieldset class="form__fieldset">
 								<legend class="form__legend">Стоимость</legend>
 
 								<div class="form__price-filter  filter">
 									<div class="filter__bar">
 										<div class="filter__active">
-											<div class="filter__toggle  filter__toggle-min"></div>
-											<div class="filter__toggle  filter__toggle-max"></div>
+											<div class="filter__toggle  filter__toggle--min"></div>
+											<div class="filter__toggle  filter__toggle--max"></div>
 										</div>
 									</div>
 
 									<div class="filter__values">
-										<span>от <input type="text" name="price" value="0"></span>
-										<span>до <input type="text" name="price" value="5000"></span>
+										<span>от <input type="number" name="price" value="0" min="0"></span>
+										<span>до <input type="number" name="price" value="5000" max="9999"></span>
 									</div>
 								</div>
 							</fieldset>
