@@ -15,11 +15,12 @@
 	background-color: #fff;
 	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2); 
 
+	animation: popup 0.4s;
 	display: none;
 }
 
-.modal-content__show{
-	display: block;
+@keyframes popup{
+	0%{transform: translateY(-500px);}
 }
 
 .modal-content__close{

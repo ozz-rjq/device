@@ -1612,10 +1612,13 @@ input[type=number] {
   padding-bottom: 75px;
   background-color: #fff;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  animation: popup 0.4s;
   display: none;
 }
-.modal-content__show {
-  display: block;
+@keyframes popup {
+  0% {
+    transform: translateY(-500px);
+  }
 }
 .modal-content__close {
   position: absolute;
@@ -1702,4 +1705,20 @@ input[type=number] {
   max-height: 156px;
   overflow: auto;
   resize: none;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 226, 127, 0.4);
+  display: none;
+}
+.modal-overlay:hover {
+  cursor: pointer;
+}
+.js-show {
+  display: block;
 }
