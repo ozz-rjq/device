@@ -313,7 +313,7 @@
 					<li class="info-block__item">Автотрейдинг</li>
 					<li class="info-block__item">ЖелДорЭкспедиция</li>
 				</ul>
-				<a class="button  button--long">
+				<a class="button  button--long  js-open-map">
 					<span class="button__inner">Подробнее о нас</span>
 				</a>
 			</section>
@@ -323,7 +323,7 @@
 				<p class="info-block__desc info-block__desc--long">
 					Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
 				</p>
-				<div class="info-block__map">
+				<div class="info-block__map" id="map">
 					<img src="img./map.jpg" alt="Moscow Map" width="560" height="222">
 				</div>
 
@@ -384,7 +384,7 @@
 	</footer>
 
 	<div class="modal-content">
-		<button class="modal-content__close"></button>
+		<button class="modal-content__close  modal-content__close--popup"></button>
 		<form  class="modal-content__form feedback" action="#" method="POST">
 			<div class="feedback__row">
 				<div class="feedback__wrap">
@@ -411,9 +411,19 @@
 		</form>
 	</div>
 
+	<div class="modal-map">
+		<button class="modal-content__close  modal-content__close--map"></button>
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779994!2d37.52742931546598!3d55.68703098053578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGW0Y8sIDExOTMxMQ!5e0!3m2!1suk!2sua!4v1515425452562" allowfullscreen></iframe>
+	</div>
+
 	<div class="modal-overlay"></div>
 
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxkmT5Y9fXFuPZ7QyCZQH7O44mTT7Hevk">
+  </script>
 	<script src="js/script.js"></script>
+	<script src="js/map.js"></script>
 
 </body>
 </html>
