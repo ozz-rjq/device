@@ -1598,3 +1598,108 @@ input[type=number] {
   border: none;
   background-color: transparent;
 }
+.modal-content {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  box-sizing: border-box;
+  width: 960px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 95px;
+  padding-bottom: 75px;
+  background-color: #fff;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+.modal-content__show {
+  display: block;
+}
+.modal-content__close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: none;
+  outline-radius: 50%;
+  background-color: #ffe27f;
+}
+.modal-content__close::before,
+.modal-content__close::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 13px;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+}
+.modal-content__close::before {
+  transform: rotate(45deg);
+}
+.modal-content__close::after {
+  transform: rotate(-45deg);
+}
+.modal-content__close:hover {
+  cursor: pointer;
+  background-color: #ffc600;
+}
+.modal-content__close:active::before,
+.modal-content__close:active::after {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.modal-content__close:focus {
+  outline: 1px solid #ffe27f;
+}
+.feedback__row {
+  display: flex;
+  justify-content: space-between;
+}
+.feedback__wrap {
+  width: 360px;
+  margin-bottom: 36px;
+}
+.feedback__wrap--long {
+  width: 100%;
+}
+.feedback label {
+  display: block;
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.feedback input,
+.feedback textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 19px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  background-color: #f2f2f2;
+  border: none;
+}
+.feedback input:hover,
+.feedback textarea:hover {
+  background-color: #ebebeb;
+}
+.feedback input:focus,
+.feedback textarea:focus {
+  outline: 3px solid #e5e5e5;
+  background-color: #fff;
+  color: #444;
+}
+.feedback textarea {
+  max-height: 156px;
+  overflow: auto;
+  resize: none;
+}
