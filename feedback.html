@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Каталог товаров магазина Девайс">
+	<title>Device Catalog</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+	<header class="page-header  page-header--inner  container">
+		<div class="page-header__logo">
+			<a href="index.html"><img src="img/device-logo.png" alt="Device" width="164" height="36"></a>
+		</div>
+
+		<div class="page-header__inner">
+			<div class="page-header__row">
+				<form class="page-header__search" action="#">
+					<label for="global-search">Поиск:</label>
+					<input type="text" name="global-search" placeholder="Поиск по сайту" id="global-search" required>
+					<button class="page-header__button" type="submit">Найти</button>
+				</form>
+
+				<ul class="user-block">
+					<li class="user-block__item  user-block__login">
+						<a class="user-block__link" href="#">Валентин Петухов</a>
+						<a class="user-block__link  user-block__link--faded" href="#">Выйти</a>
+					</li>
+
+					<li class="user-block__item  user-block__compare">
+						<a class="user-block__link" href="#">Сравнить</a>
+					</li>
+
+					<li class="user-block__item  user-block__cart">
+						<a class="user-block__link" href="#">Корзина</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="page-header__row">
+				<nav class="main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__item  main-nav__catalog">
+							<a class="main-nav__link">Каталог товаров</a>
+							<nav class="sub-nav">
+								<ul class="sub-nav__list">
+									<li class="sub-nav__row">
+										<span><a class="sub-nav__link" href="#">Виртуальная реальность</a></span>
+										<span><a class="sub-nav__link" href="#">Фитнесс-браслеты</a></span>
+										<span><a class="sub-nav__link" href="#">Квадрокоптеры</a></span>
+									</li>
+									<li class="sub-nav__row">
+										<span><a class="sub-nav__link">Моноподы для селфи</a></span>
+										<span><a class="sub-nav__link" href="#">Умные часы</a></span>
+									</li>
+									<li class="sub-nav__row">
+										<span><a class="sub-nav__link" href="#">Экшн-камеры</a></span>
+									</li>
+								</ul>
+							</nav>
+						</li>
+						<li class="main-nav__item  main-nav__delivery"><a class="main-nav__link" href="#">Доставка</a></li>
+						<li class="main-nav__item"><a class="main-nav__link" href="#">Гарантия</a></li>
+						<li class="main-nav__item main-nav__contacts"><a class="main-nav__link" href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<h1 class="visually-hidden">Напишите нам!</h1>
+
+		<div class="modal-content  modal-content--inner">
+			<form  class="modal-content__form feedback" action="#" method="POST">
+				<div class="feedback__row">
+					<div class="feedback__wrap">
+						<label for="name">Ваше имя:</label>
+						<input type="text" name="name" placeholder="Представьтесь, пожалуйста" id="name">
+					</div>
+
+					<div class="feedback__wrap">
+						<label for="email">Ваш e-mail:</label>
+						<input type="email" name="email" placeholder="Для отправки ответа" id="email">
+					</div>
+				</div>
+
+				<div class="feedback__row">
+					<div class="feedback__wrap  feedback__wrap--long">
+						<label for="message">Текст письма:</label>
+						<textarea name="message" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+					</div>
+				</div>
+
+				<button class="button">
+					<span class="button__inner">Отправить</span>
+				</button>
+			</form>
+		</div>
+	</main>
+
+	<footer class="page-footer">
+		<div class="page-footer__row  page-footer__row--pseudo  container">
+			<a href="index.html"><div class="page-footer__logo">
+			</div></a>
+
+			<ul class="user-block user-block--footer">
+				<li class="user-block__item  user-block__login">
+					<a href="#" class="user-block__link user-block__link--footer">Войти</a>
+				</li>
+
+				<li class="user-block__item  user-block__compare">
+					<a href="#" class="user-block__link">Сравнить</a>
+				</li>
+
+				<li class="user-block__item  user-block__cart">
+					<a href="#" class="user-block__link">Корзина</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="page-footer__row container">
+			<b class="page-footer__info">г. Москва, ул. Строителей, 15</b>
+
+			<nav class="main-nav main-nav--footer">
+				<ul class="main-nav__list">
+					<li class="main-nav__item main-nav__item--delivery">
+						<a class="main-nav__link" href="#">Доставка</a>
+					</li>
+					<li class="main-nav__item main-nav__item--warranty">
+						<a class="main-nav__link" href="#">Гарантия</a>
+					</li>
+					<li class="main-nav__item main-nav__item--contacts">
+						<a class="main-nav__link" href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+
+			<b class="page-footer__info">Тел.: +7 (495) 495-95-95</b>
+		</div>
+
+		<div class="page-footer__row  container">
+			<ul class="page-footer-social  social">
+				<li class="social__item"><a href="#" class="social__link  social__link--fb">Фейсбук</a></li>
+				<li class="social__item"><a href="#" class="social__link  social__link--insta">Инстаграм</a></li>
+				<li class="social__item"><a href="#" class="social__link  social__link--tw">Твиттер</a></li>
+			</ul>
+		</div>
+	</footer>
+	
+</body>
+</html>
