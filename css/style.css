@@ -94,8 +94,9 @@ a {
   padding-bottom: 16px;
   margin-bottom: 0;
 }
-.title .container {
+.container .title {
   width: 1040px;
+  margin: 0 auto;
 }
 .page-header {
   position: relative;
@@ -1036,6 +1037,7 @@ a {
   padding-top: 65px;
   background-color: #444444;
   color: #fff;
+  min-width: 1200px;
 }
 .page-footer__row--pseudo {
   position: relative;
