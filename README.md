@@ -8,4 +8,6 @@ The project was created using:
 * Native JS
 * Gulp.js toolkit
 
+- - - -
+
 [Review](https://ozz-rjq.github.io/device/)
